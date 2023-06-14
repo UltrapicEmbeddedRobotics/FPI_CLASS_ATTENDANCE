@@ -228,3 +228,4 @@ uint8_t getFingerprintEnroll() {
 
   return true;
 }
+
