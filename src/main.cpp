@@ -180,7 +180,7 @@ uint8_t getFingerprintEnroll() {
   Serial1.println("Please type in the UID # (from 1 to 127) you want to save this finger as...");
   uid = Serial1.read();
   if (uid == 0) {// ID #0 not allowed, try again!
-     return;
+     return 0;
   }
   Serial1.print("Enrolling UID #");
   Serial1.println(uid);
